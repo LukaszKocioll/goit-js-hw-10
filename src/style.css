@@ -1,0 +1,156 @@
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  .cat-info {height: 500px;
+    width: 500px;
+
+  }
+
+body, h1, p, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    
+        background-color: #f0f0f0; /* Szare tło */
+        background-image: repeating-linear-gradient(45deg, #e0e0e0, #e0e0e0 10px, #ffffff 10px, #ffffff 20px); /* Delikatne paski */
+    }
+    
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    color: #fff; 
+    background-color: #000; 
+    border: none; 
+}
+
+.loader-container {
+    display: none;
+    margin: 20px 0;
+}
+
+.loader {
+    font-size: 20px;
+    color: #555;
+}
+
+.error-container {
+    display: none;
+    margin: 20px 0;
+}
+
+.error {
+    font-size: 20px;
+    color: #f00;
+}
+
+
+.cat-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+.cat-info p:nth-child(3) {
+   
+    border: 2px solid #333; 
+    padding: 10px; 
+    font-size: 16px; 
+    font-weight: bold;
+    font-family: Arial, sans-serif; 
+    text-align: center; }
+
+.cat-details {
+    flex: 1;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.cat-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.cat-image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.cat-info img {
+    max-width: 1280px; 
+    max-height: 720px; 
+    width: auto;
+    height: auto; 
+}
+
+
+
+
+
+
